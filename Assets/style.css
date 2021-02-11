@@ -1,0 +1,72 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #f0878c;
+}
+
+
+.header {
+    padding: 40px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/Users/jenny/Desktop/homework-week2/portfolio/Assets/roses.jpeg);
+    background-blend-mode:darken;
+    
+}
+
+
+
+.header h1 {
+    display: inline-block;
+    font-size: 50px;
+    color: white;
+    padding: 10px;
+    background-color: #f0878c;
+    position: relative;
+    right: 40px;
+  
+}
+
+
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+}
+
+
+.header nav ul {
+    list-style-type: none;
+}
+
+.header nav ul li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+.portrait {
+    height: 400px;
+    width: 40%;
+    float: right;
+    margin-top: 25px;
+    background-image: url(/Users/jenny/Desktop/homework-week2/portfolio/Assets/beautiful-happy-blonde-woman-smiling-260nw-545209336.jpg);
+    background-size:cover;
+    background-position: center;
+}
+
