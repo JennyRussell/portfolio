@@ -1,72 +1,215 @@
-* {
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-}
+:root {
+    --white:white;
+    --peach: #f0878c;
+    --dark-red: rgb(204, 56, 56);
+    
+  }
+
+
+
+html {
+    /* set 1rem to 10px instead of native 16px to make it easier to calculate font-size values for the rest of the page (e.g. 1.6rem is 16px, 2.0rem is 20px, etc.) */
+    font-size: 62.5%;
+  }
+
+
+  h1 {
+    /* 4rem = 40px (4 * 10px) */
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.5rem;
+  }
+  h5 {
+    font-size: 2rem;
+  }
+  h6 {
+    font-size: 1.5rem;
+  }
+
+
+  p {
+    font-size: 2rem;
+  }
 
 body {
     background-color: #f0878c;
-}
-
-
-.header {
-    padding: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    background-image: url(/Users/jenny/Desktop/homework-week2/portfolio/Assets/roses.jpeg);
-    background-blend-mode:darken;
+    margin: 0;
+   
     
 }
 
 
 
+
+
+
+.header .container {
+	display: flex;
+	align-items: center;
+  justify-content:space-between; 
+  flex-wrap: wrap; 
+  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rose-color-meanings-1578080496.png?crop=0.355xw:0.473xh;0.482xw,0.360xh&resize=640:*);
+  
+ 
+}
+
+.main-nav ul {
+	margin: 1em 0 .5em;
+  text-align: center;
+  
+}
+
+.main-nav li {
+  display: inline;
+  font-size: 2rem;
+  font-weight: 800;
+  
+}
+
+.main-nav a {
+	display: inline-block;
+  padding: .5em 1.5em;
+  color: var(--white);
+  text-decoration: none;
+}
+
+
 .header h1 {
-    display: inline-block;
-    font-size: 50px;
-    color: white;
+    color: var(--white);
     padding: 10px;
-    background-color: #f0878c;
-    position: relative;
-    right: 40px;
+    background-color: var(--peach);
+  
   
 }
 
 
-.header nav {
-    padding-top: 15px;
-    margin-right: 20px;
-    float: right;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+
+
+.about-me {
+  display: flex;
+  justify-content: center;
+
+
 }
 
 
-.header nav ul {
-    list-style-type: none;
+.main-items h1 {
+  
+  border-right: 5px solid var(--dark-red);
+  height: 300px;
+  padding-right: 20px;
+  text-align: right;
+  color: var(--white);
+  
+  
+
 }
 
-.header nav ul li {
-    display: inline-block;
-    margin-left: 25px;
+
+
+ .about-me .my-work .contact {
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-basis: content;
+  
+  
+}
+ 
+
+ .about-me-text {
+    text-align:right;
+   
+    
+    
+
 }
 
-a {
-    color: #ffffff;
-    text-decoration: none;
+
+.about-me p {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: start;
+    color: white;
+    width: 400px;
+    padding: 30px;
+} 
+
+ 
+.portrait{
+    height: auto;
+    margin-top: 35px;
+    border: 5px solid var(--dark-red);
+    width: 300px;
+    height: 300px;
+    
+} 
+
+
+.my-work{
+    display:flex;
+    justify-content:space-evenly;
+    
+    
+   
 }
 
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
+
+.my-work h1{
+    height: 500px;
+   justify-content: start;
+   color: var(--white);
+}
+
+
+.project-box-1{
+    margin-left: 20px;
+    margin-top: 35px;
+    height: 500px;
+    border: 5px solid var(--dark-red);
+    width: 600px;
+}
+
+h3 {
+    width: 170px;
+    padding: 20px;
+    background-color: var(--dark-red);
+    color: var(--white);
+    align-self: flex-start;
+}
+
+.contact {
+    height: 500px;
+    display:flex;
+    justify-content:stretch;
+    padding-left: 160px;
+    
+} 
+
+#contact ul{
+  justify-self: self-start;
+  list-style-type: none;
+  padding-top: 50px;
+  color: var(--white);
+  align-self: flex-start;
+  font-size: 38px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+@media screen and (max-width: 992px) {
+  article {
+    width: 50%;
   }
-
-.portrait {
-    height: 400px;
-    width: 40%;
-    float: right;
-    margin-top: 25px;
-    background-image: url(/Users/jenny/Desktop/homework-week2/portfolio/Assets/beautiful-happy-blonde-woman-smiling-260nw-545209336.jpg);
-    background-size:cover;
-    background-position: center;
 }
 
+@media screen and (max-width: 768px) {
+  article {
+    width: 100%;
+  }
+}
