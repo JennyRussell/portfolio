@@ -40,7 +40,8 @@ html {
 
 body {
     background-color: #f0878c;
-    margin: 0;
+    margin: 10px;
+    margin-right: 20px;
    
     
 }
@@ -92,52 +93,33 @@ body {
 
 
 
-.about-me {
-  display: flex;
-  justify-content: center;
-
-
-}
-
-
 .main-items h1 {
-  
+  display: flex;
   border-right: 5px solid var(--dark-red);
   height: 300px;
   padding-right: 20px;
   text-align: right;
   color: var(--white);
-  
-  
+  margin-left: 150px;
+  justify-content: left;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 150px;
+
 
 }
 
-
-
- .about-me .my-work .contact {
-  flex-direction: row;
-  flex-wrap: wrap;
-  flex-basis: content;
-  
-  
+.about-me {
+  display: flex;
 }
- 
 
- .about-me-text {
-    text-align:right;
-   
-    
-    
-
-}
 
 
 .about-me p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: start;
     color: white;
-    width: 400px;
     padding: 30px;
+    width: 360px;
 } 
 
  
@@ -153,7 +135,8 @@ body {
 
 .my-work{
     display:flex;
-    justify-content:space-evenly;
+    justify-content: left;
+    
     
     
    
@@ -161,16 +144,15 @@ body {
 
 
 .my-work h1{
-    height: 500px;
-   justify-content: start;
-   color: var(--white);
+   height: 500px;
+  
 }
 
 
 .project-box-1{
     margin-left: 20px;
     margin-top: 35px;
-    height: 500px;
+    height: 485px;
     border: 5px solid var(--dark-red);
     width: 600px;
 }
@@ -186,13 +168,12 @@ h3 {
 .contact {
     height: 500px;
     display:flex;
-    justify-content:stretch;
-    padding-left: 160px;
+    
+   
     
 } 
 
 #contact ul{
-  justify-self: self-start;
   list-style-type: none;
   padding-top: 50px;
   color: var(--white);
@@ -212,4 +193,9 @@ h3 {
   article {
     width: 100%;
   }
+}
+.project-box-1:hover,
+.project-box-1:hover .project-box-1,
+#contact li:hover, .main-nav li:hover {
+  box-shadow: inset 0px 0px 15px var(--white), 0 0 15px var(--white);
 }
