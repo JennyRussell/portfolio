@@ -204,9 +204,11 @@ h3 {
   }
 }
 
+
 @media screen and (max-width: 768px) {
   article {
     width: 100%;
+    margin-left: 0;
   }
 }
 
@@ -221,6 +223,16 @@ h3 {
     display: flex;
     justify-content:center;
     width: 100%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .contact li{
+    justify-content: left;
+    font-size: 2rem;
+    width: 50%;
+    margin-left: 5px;
+    flex-direction: column;
   }
 }
 
