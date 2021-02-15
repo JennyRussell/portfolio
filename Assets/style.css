@@ -1,7 +1,7 @@
 :root {
-    --white:white;
-    --peach: #f0878c;
-    --dark-red: rgb(204, 56, 56);
+    --black:rgb(0, 0, 0);
+    --marine: #12688a;
+    --electric-blue: rgb(51, 219, 248);
     
   }
 
@@ -39,9 +39,9 @@ html {
   }
 
 body {
-    background-color: #f0878c;
-    margin: 10px;
-    margin-right: 20px;
+    background-color: var(--marine);
+    margin: 0;
+   
    
     
 }
@@ -56,10 +56,10 @@ body {
 	align-items: center;
   justify-content:space-between; 
   flex-wrap: wrap; 
-  background-image: url(https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/rose-color-meanings-1578080496.png?crop=0.355xw:0.473xh;0.482xw,0.360xh&resize=640:*);
-  
- 
+  background-image: url(http://www.wallpapermania.eu/images/data/2013-08/5784_Two-beautiful-blue-flowers-HD-roses.jpg);
+  height: 300px;
 }
+
 
 .main-nav ul {
 	margin: 1em 0 .5em;
@@ -67,9 +67,14 @@ body {
   
 }
 
+div.container {
+  margin: 0;
+  padding: 0;
+}
+
 .main-nav li {
   display: inline;
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-weight: 800;
   
 }
@@ -77,15 +82,16 @@ body {
 .main-nav a {
 	display: inline-block;
   padding: .5em 1.5em;
-  color: var(--white);
+  color: var(--black);
   text-decoration: none;
+  
 }
 
 
 .header h1 {
-    color: var(--white);
+    color: var(--electric-blue);
     padding: 10px;
-    background-color: var(--peach);
+    background-color: var(--marine);
   
   
 }
@@ -95,12 +101,12 @@ body {
 
 .main-items h1 {
   display: flex;
-  border-right: 5px solid var(--dark-red);
+  border-right: 5px solid var(--electric-blue);
   height: 300px;
   padding-right: 20px;
   text-align: right;
-  color: var(--white);
-  margin-left: 150px;
+  color: var(--black);
+  margin-left: 110px;
   justify-content: left;
   font-family: Georgia, 'Times New Roman', Times, serif;
   width: 150px;
@@ -117,16 +123,17 @@ body {
 .about-me p {
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: start;
-    color: white;
+    color:var(--electric-blue);
     padding: 30px;
     width: 360px;
+    font-weight: 500;
 } 
 
  
 .portrait{
     height: auto;
     margin-top: 35px;
-    border: 5px solid var(--dark-red);
+    border: 5px solid var(--electric-blue);
     width: 200px;
     height: 300px;
     
@@ -142,6 +149,9 @@ body {
    
 }
 
+.my-work a{
+  text-decoration: none;
+}
 
 .my-work h1{
    height: 500px;
@@ -153,15 +163,16 @@ body {
     margin-left: 20px;
     margin-top: 35px;
     height: 485px;
-    border: 5px solid var(--dark-red);
+    border: 5px solid var(--electric-blue);
     width: 600px;
+    
 }
 
 h3 {
     width: 170px;
     padding: 20px;
-    background-color: var(--dark-red);
-    color: var(--white);
+    background-color: var(--electric-blue);
+    color: var(--black);
     align-self: flex-start;
 }
 
@@ -173,10 +184,14 @@ h3 {
     
 } 
 
+#contact h1 {
+  margin-left: 90px;
+}
+
 #contact ul{
   list-style-type: none;
   padding-top: 50px;
-  color: var(--white);
+  color: var(--electric-blue);
   align-self: flex-start;
   font-size: 38px;
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -194,8 +209,26 @@ h3 {
     width: 100%;
   }
 }
+
+@media screen and (max-width: 768px) {
+  .main-items h1 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 2567px) {
+  #about-me, #my-work, #contact {
+    display: flex;
+    justify-content:center;
+    width: 100%;
+  }
+}
+
 .project-box-1:hover,
-.project-box-1:hover .project-box-1,
-#contact li:hover, .main-nav li:hover {
-  box-shadow: inset 0px 0px 15px var(--white), 0 0 15px var(--white);
+.project-box-1:hover {
+  box-shadow: inset 0px 0px 15px var(--electric-blue), 0 0 15px var(--electric-blue);
+}
+
+#contact li:hover, .main-nav li:hover{
+  filter: drop-shadow(0 0 0.5rem var(--electric-blue));
 }
